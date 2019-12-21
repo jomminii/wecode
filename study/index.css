@@ -32,10 +32,10 @@ a:hover {
 
 .top {
   background: lightblue;
-  height: 18%;
   top: 0;
   width: 100%;
   position: fixed;
+  height: 130px;
 }
 
 .top1 {
@@ -53,8 +53,7 @@ a:hover {
 
 .middle {
   background: lightgoldenrodyellow;
-  padding-top: 22%;
-  height: 35%;
+  padding-top: 140px;
 }
 
 .middle1-flex-container {
@@ -71,9 +70,7 @@ a:hover {
 
 .bottom {
   background: lightpink;
-  height: 25%;
   padding-top: 30px;
-
   padding-bottom: 30px;
 }
 
@@ -97,7 +94,6 @@ a:hover {
 .sns {
   background: lightsteelblue;
   padding-top: 20px;
-  height: 19%;
   padding-bottom: 20px;
 }
 
