@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="write-section-frame">
+        <div class="title">방명록</div>
+        <div class="write-section1">
+          <span class="naming">아이디</span>
+          <input
+            id="id-input"
+            type="text"
+            placeholder="아이디를 입력해주세요"
+          />
+        </div>
+        <div class="write-section2">
+          <span class="naming">내용</span>
+          <input
+            id="text-input"
+            type="text"
+            placeholder="내용을 입력해주세요"
+          />
+          <button class="button">방명록 남기기</button>
+        </div>
+      </div>
+      <div class="print-section-frame">
+        <div class="title">내용</div>
+        <div class="no-text">방명록이 없습니다. 친구 좀 사귀세요.</div>
+
+        <ul id="print-section"></ul>
+      </div>
+    </div>
+
+    <template id="template">
+      <span id="id"></span>
+      <span id="date"></span>
+      <div id="text-printed"></div>
+    </template>
+
+    <!--이건 숙제?-->
+    <div id="homework-frame">
+      <div id="homework-title">이것은 숙제</div>
+      <div class="number">
+        1. 버튼을 클릭하면 "안녕하세요"를 alert로 출력하시오.
+      </div>
+      <button id="one_btn">안녕하세요</button>
+
+      <div class="number">
+        2. 버튼을 클릭하면 현재 날짜/시간을 alert로 출력하시오.
+      </div>
+      <button id="two_btn">날짜/시간</button>
+
+      <div class="number">
+        3. 파일명을 입력해서 버튼을 눌러서 hwp파일 인지 확인해서 p태그 사이에
+        결과를 출력하시오.
+      </div>
+      <input type="text" id="hwpChk" placeholder="파일명 입력" />
+      <button id="three_btn">hwp파일명 확인</button>
+      <p id="three_p">확인 결과</p>
+
+      <div class="number">
+        4. 주민번호(13자리)를 입력받아서 생년월일을 추출하여 alert로 출력하시오.
+      </div>
+      <input type="text" id="bthChk" placeholder="민번 입력" />
+      <button id="four_btn">생년월일 추출</button>
+      <p id="four_p">추출 결과</p>
+
+      <div class="number">
+        5. 점수를 입력받아서 버튼을 누르면 A~F학점을 alert로 출력하시오.
+        (문자열이 입력되면 다시 입력받도록 하시오.)
+      </div>
+      <input type="text" id="gradeChk" placeholder="점수 입력" />
+      <button id="five_btn">학점 확인</button>
+      <p id="five_p">확인 결과</p>
+
+      <div class="number">
+        6. 다음과 같은 형태를 for문으로 출력하시오.
+      </div>
+      <input type="text" id="six_print" placeholder="원하는 문자 입력" />
+      <button id="six_btn">입력 문자 출력</button>
+      <p id="six_p">출력 결과</p>
+
+      <div class="number">
+        7. 다음과 같은 형태를 for문으로 출력하시오.
+      </div>
+      <input type="text" id="seven_print" placeholder="반복 횟수 입력" />
+      <button id="seven_btn">반복 문자 출력</button>
+      <p id="seven_p">출력 결과</p>
+
+      <div class="number">
+        8. 다음과 같은 형태를 for문으로 출력하시오.
+      </div>
+      <button id="eight_btn">입력 문자 출력</button>
+      <p id="eight_p">출력 결과</p>
+
+      <div class="number">
+        9. 버튼1을 누르면 배경색을 red. 버튼2를 누르면 배경색을 blue로 변경되게
+        하시오.
+      </div>
+      <button id="nine_btn_blue">퍼런배경</button>
+      <button id="nine_btn_yellow">상아배경</button>
+      <button id="nine_btn_original">원래배경</button>
+
+      <div class="number">
+        10. naver버튼을 누르면 naver로 daum버튼을 누르면 daum으로 이동하게
+        하시오.
+      </div>
+      <button id="ten_btn_naver">
+        <a href="https://naver.com" target="_blank">네이버 ㄱㄱ</a>
+      </button>
+      <button id="ten_btn_daum">
+        <a href="https://daum.net" target="_blank">다음 ㄱㄱ</a>
+      </button>
+
+      <div class="number">
+        11. 핸드폰번호를 입력받아서 국번이 010,011,017,016,018,019인지 체크하는
+        프로그램을 작성하시오. input text는 3개 사용.
+      </div>
+      <input type="text" id="eleven_01" placeholder="***" />
+      <input type="text" id="eleven_02" placeholder="****" />
+      <input type="text" id="eleven_03" placeholder="****" />
+
+      <button id="eleven_btn">국번 체크</button>
+      <p id="eleven_p">체크 결과</p>
+
+      <div class="number">
+        12. 두개의 숫자를 input text로 받아서 곱셈한 결과를 p태그에 출력하는
+        프로그램을 작성하시오.
+      </div>
+      <input type="text" id="twelve_01" placeholder="숫자" />
+      <input type="text" id="twelve_02" placeholder="숫자" />
+
+      <button id="twelve_btn">계산</button>
+      <p id="twelve_p">계산 결과</p>
+
+      <div class="number">
+        13. 남성, 여성중 한 개만 선택하도록 radio button을 만들고, 버튼을 누르면
+        선택한 값이 alert로 출력되도록 작성하시오.
+      </div>
+      <input type="radio" name="sex" value="male" />남자
+      <input type="radio" name="sex" value="female" />여자
+
+      <button id="naver">naver</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
